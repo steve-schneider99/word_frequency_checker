@@ -1,7 +1,7 @@
 require('sinatra')
-require('sinatra-reloader')
+require('sinatra/reloader')
 require('./lib/frequency_check')
-also_reload(lib/**/*.rb)
+also_reload('lib/**/*.rb')
 
 get('/') do
   erb(:index)

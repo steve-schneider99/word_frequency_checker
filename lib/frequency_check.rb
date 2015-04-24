@@ -12,16 +12,3 @@ class String
   word_count
   end
 end
-
-
-
-
-
-
-
-
-#
-# new_array =[]
-#
-# words = self.split.sort()
-# words.each do |word|
