@@ -8,5 +8,6 @@ get('/') do
 end
 
 get('/returned_frequency') do
-  #code goes here
+  frequency_count = params.fetch('input_sentence').get_frequency('input_word')
+  erb(:returned_frequency)
 end
