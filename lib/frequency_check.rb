@@ -1,6 +1,6 @@
 class String
-  define_method(:get_frequency) do |input_word|
-      split_sentence = self.split("")
+  define_method(:get_frequency) do |input_word.downcase|
+      split_sentence = self.downcase.split(" ")
       word_count = 0
       split_sentence.each do |word|
         if word.include?(input_word)
